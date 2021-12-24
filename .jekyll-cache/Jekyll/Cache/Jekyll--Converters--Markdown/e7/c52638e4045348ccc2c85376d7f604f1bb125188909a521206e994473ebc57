@@ -1,0 +1,6 @@
+I"ü<h2> Video Demonstration </h2>
+<hr />
+
+<video controls="controls" width="auto" height="auto" src="/assets/images/hangman.mov"></video>
+<p><a href="https://github.com/GabrielSestieri/GabrielSestieri/blob/main/Python/Hangman/hangman.py">The Code</a></p>
+:ET

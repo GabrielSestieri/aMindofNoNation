@@ -1,0 +1,12 @@
+Gabriel_Sestieri:
+  name        : "Gabriel Sestieri"
+  bio         : "A recent University of Maryland graduate that majored in Information Science on a Cybersecurity track."
+  avatar      : "/assets/images/pp.jpg"
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https:/github.com/GabrielSestieri/GabrielSestieri"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/gsestieri"
+    

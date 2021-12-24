@@ -1,0 +1,7 @@
+---
+layout: home
+title:  "connect4.py"
+date:   2021-12-22 06:58:36 -0500
+categories: projects connect4
+---
+<video controls="controls" width="515" height="515"></video>
