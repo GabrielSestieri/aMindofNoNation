@@ -1,7 +1,7 @@
 ---
 title: Writeups
 layout: single
-permalink: /Writeups
+permalink: /writeups
 toc: true
 toc_label: "Objectives"
 toc_icon: "cog"
