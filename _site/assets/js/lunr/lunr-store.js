@@ -1,12 +1,12 @@
 var store = [{
         "title": "Basic CTF",
-        "excerpt":" ","categories": ["writeups","basicctf"],
+        "excerpt":"Enumeration  Nmap  GoBuster   Brute Forcing / Cracking  Hydra  John the Ripper  ","categories": ["writeups","basicctf"],
         "tags": [],
         "url": "/aMindofNoNation/writeups/basicctf/2021/12/22/basicctf.html",
         "teaser": null
       },{
         "title": "connect4.py",
-        "excerpt":" ","categories": ["projects","connect4"],
+        "excerpt":"\r ","categories": ["projects","connect4"],
         "tags": [],
         "url": "/aMindofNoNation/projects/connect4/2021/12/22/connect4.html",
         "teaser": null

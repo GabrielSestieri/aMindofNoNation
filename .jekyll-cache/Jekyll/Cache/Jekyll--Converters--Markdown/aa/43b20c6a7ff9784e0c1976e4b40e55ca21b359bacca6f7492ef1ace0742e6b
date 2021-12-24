@@ -1,0 +1,6 @@
+I")<h2> Video Demonstration </h2>
+<hr />
+
+<video controls="controls" width="auto" height="auto" src="../assets/images/basketball.mov" type="video/mp4"></video>
+<p><a href="https://github.com/GabrielSestieri/GabrielSestieri/blob/main/Python/BasketballPredict/basketball_predictor.py">The Code</a></p>
+:ET

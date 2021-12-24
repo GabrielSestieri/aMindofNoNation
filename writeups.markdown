@@ -3,7 +3,7 @@ title: Writeups
 layout: single
 permalink: /writeups
 toc: true
-toc_label: "Objectives"
+toc_label: "Table of Contents"
 toc_icon: "cog"
 ---
 
