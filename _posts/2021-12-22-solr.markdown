@@ -3,5 +3,20 @@ layout: home
 title:  "Basic CTF"
 date:   2021-12-22 06:58:36 -0500
 categories: writeups solr
+toc: true
+toc_label: "Objectives"
+toc_icon: "cog"
 ---
-<video controls="controls" width="515" height="515"></video>
+## Enumeration
+
+### Nmap
+We use nmap -A -vv -Pn IP 
+
+### GoBuster
+gobuster dir ... ... IP ... ... 
+
+## Brute Forcing / Cracking
+
+### Hydra
+
+### John the Ripper
