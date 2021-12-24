@@ -15,7 +15,7 @@ toc_icon: "cog"
 
 
 [BasicCTF]: https://gabrielsestieri.github.io/writeups/basicctf/2021/12/22/basicctf.html
-[Solr]: https://gabrielsestieri.github.io/writeups/solr/2021/12/22/solr.html
+[Solr]: https://gabrielsestieri.github.io/writeups/solr/2021/12/22/solr.markdown
 
 ## Medium
 ### [BasicCTF][BasicCTF]       
