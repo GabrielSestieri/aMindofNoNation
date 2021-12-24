@@ -1,6 +1,6 @@
 var store = [{
         "title": "Basic CTF",
-        "excerpt":"Enumeration  Nmap  GoBuster   Brute Forcing / Cracking  Hydra  John the Ripper  ","categories": ["writeups","basicctf"],
+        "excerpt":"Enumeration   Nmap  We use nmap -A -vv -Pn IP   GoBuster  gobuster dir … … IP … …   Brute Forcing / Cracking   Hydra   John the Ripper  ","categories": ["writeups","basicctf"],
         "tags": [],
         "url": "/aMindofNoNation/writeups/basicctf/2021/12/22/basicctf.html",
         "teaser": null

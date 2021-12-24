@@ -8,9 +8,15 @@ toc_label: "Objectives"
 toc_icon: "cog"
 ---
 ## Enumeration
+
 ### Nmap
+We use nmap -A -vv -Pn IP 
+
 ### GoBuster
+gobuster dir ... ... IP ... ... 
 
 ## Brute Forcing / Cracking
+
 ### Hydra
+
 ### John the Ripper
