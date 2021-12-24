@@ -21,16 +21,16 @@ permalink: /projects/
 ## C
 ### Labs
 ### Projects
-[BasketBall Predictor]: https://gabrielsestieri.github.io/aMindofNoNation/projects/basketball/2021/12/24/basketball.html
-[Blackjack]: https://gabrielsestieri.github.io/aMindofNoNation/projects/blackjack/2021/12/24/blackjack.html
-[Connect4]: https://gabrielsestieri.github.io/aMindofNoNation/projects/connect4/2021/12/22/connect4.html
-[Drug Interaction]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/druginter.html
-[Enron Parsing]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/enron.html
-[Google Play Scrape]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/gplayscrape.html
-[Hangman]: https://gabrielsestieri.github.io/aMindofNoNation/projects/hangman/2021/12/22/hangman.html
-[Keylogger]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/keylogger.html
-[LinkedIn Bot]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/linkedinbot.html
-[Robot]: https://gabrielsestieri.github.io/aMindofNoNation/projects/robot/2021/12/24/robot.html
-[Simple Server]: https://gabrielsestieri.github.io/aMindofNoNation/projects/simpleserver/2021/12/24/simpleserver.html
+[BasketBall Predictor]: https://gabrielsestieri.github.io/projects/basketball/2021/12/24/basketball.html
+[Blackjack]: https://gabrielsestieri.github.io/projects/blackjack/2021/12/24/blackjack.html
+[Connect4]: https://gabrielsestieri.github.io/projects/connect4/2021/12/22/connect4.html
+[Drug Interaction]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/druginter.html
+[Enron Parsing]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/enron.html
+[Google Play Scrape]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/gplayscrape.html
+[Hangman]: https://gabrielsestieri.github.io/projects/hangman/2021/12/22/hangman.html
+[Keylogger]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/keylogger.html
+[LinkedIn Bot]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/linkedinbot.html
+[Robot]: https://gabrielsestieri.github.io/projects/robot/2021/12/24/robot.html
+[Simple Server]: https://gabrielsestieri.github.io/projects/simpleserver/2021/12/24/simpleserver.html
 
-[CrimeTracker]: https://gabrielsestieri.github.io/aMindofNoNation/projects/crimetracker/2021/12/24/crimetracker.html
+[CrimeTracker]: https://gabrielsestieri.github.io/projects/crimetracker/2021/12/24/crimetracker.html
