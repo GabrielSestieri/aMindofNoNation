@@ -1290,4 +1290,4 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .projects a { font-size: 1.5em; padding: 5%; white-space: nowrap; }
 
-.links { display: flex; flex-direction: column; }
+.links a { display: flex; flex-direction: column; }
