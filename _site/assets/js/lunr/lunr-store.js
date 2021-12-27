@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "drug_interactions.py",
-        "excerpt":" Video Demonstration     The Code","categories": ["projects","druginter"],
+        "excerpt":"  Video Demonstration     The Code","categories": ["projects","druginter"],
         "tags": [],
         "url": "/projects/druginter/2021/12/27/druginter.html",
         "teaser": null
