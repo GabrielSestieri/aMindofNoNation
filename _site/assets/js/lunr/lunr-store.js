@@ -29,6 +29,12 @@ var store = [{
         "url": "/projects/blackjack/2021/12/24/blackjack.html",
         "teaser": null
       },{
+        "title": "connect4.py",
+        "excerpt":" Video Demonstration     The Code","categories": ["projects","connect4"],
+        "tags": [],
+        "url": "/projects/connect4/2021/12/27/connect4.html",
+        "teaser": null
+      },{
         "title": "drug_interactions.py",
         "excerpt":" Video Demonstration     The Code","categories": ["projects","druginter"],
         "tags": [],
@@ -39,6 +45,12 @@ var store = [{
         "excerpt":" Video Demonstration     The Code","categories": ["projects","enron"],
         "tags": [],
         "url": "/projects/enron/2021/12/27/enron.html",
+        "teaser": null
+      },{
+        "title": "keylogger.py",
+        "excerpt":" Video Demonstration     The Code","categories": ["projects","keylogger"],
+        "tags": [],
+        "url": "/projects/keylogger/2021/12/27/keylogger.html",
         "teaser": null
       },{
         "title": "robot.py",
