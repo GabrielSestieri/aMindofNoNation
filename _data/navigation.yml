@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: /
+    url: https://gabrielsestieri.github.io
   - title: "About Me"
     url: /about/
   - title: "Projects"
