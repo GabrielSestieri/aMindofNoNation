@@ -59,6 +59,12 @@ var store = [{
         "url": "/projects/robot/2021/12/27/robot.html",
         "teaser": null
       },{
+        "title": "Prince George's County Crime Tracker",
+        "excerpt":"Video Demonstration Description A project assigned to me and one other peer in our dynamic web development class. Using pure Javascript and Google's map, geocoding, and distance matrix API, we created a crime tracker based on a dataset of our county's crime. It has been greatly neglected and as a...","categories": ["projects","crimetracker"],
+        "tags": [],
+        "url": "/projects/crimetracker/2021/12/28/crimetracker.html",
+        "teaser": null
+      },{
         "title": "gplayscrape.py",
         "excerpt":"Video Demonstration Description I was tasked with finding a way to scrape information on app developers published on Google Play based on specific keywords. Fortunately I found a pip package that established a foundation that I could build upon. Using Selenium I continuously parse through the page until it reaches...","categories": ["projects","gplayscrape"],
         "tags": [],
