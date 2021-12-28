@@ -1065,7 +1065,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* ========================================================================== ARCHIVE ========================================================================== */
 .archive { margin-top: 1em; margin-bottom: 2em; }
 @media (min-width: 64em) { .archive { float: left; width: calc(100% - 200px); padding-right: 200px; } }
-@media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 300px; } }
+@media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 100px; } }
 
 .archive__item { position: relative; }
 .archive__item a { position: relative; z-index: 10; }
@@ -1291,3 +1291,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .projects a { font-size: 1.5em; padding: 5%; white-space: nowrap; }
 
 .links a { display: flex; flex-direction: column; }
+
+.projectpage { display: flex; flex-direction: row; justify-content: space-around; }
+
+.description { padding-left: 2%; width: wide; }

@@ -89,3 +89,13 @@
    
 }
 
+.projectpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.description {
+    padding-left: 2%;
+    width: wide;
+}

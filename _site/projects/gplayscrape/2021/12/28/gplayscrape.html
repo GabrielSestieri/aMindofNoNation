@@ -1,0 +1,580 @@
+<style>
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: repeat;
+  }
+</style>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>gplayscrape.py - A Mind of No Nation</title>
+<meta name="description" content="Video Demonstration                              Description          I was tasked with finding a way to scrape information on app developers published on Google Play based on specific keywords.              Fortunately I found a pip package that established a foundation that I could build upon.             Using Selenium I continuously parse through the page until it reaches the last app available.              The program concurrently opens each app and scrapes the name of the app, the email of the developer, and the company or organization the developer belongs to and outputs it as a dataframe that is then converted to an Excel sheet that can be used for marketing purposes.              I am planning on adding an automatic emailing functionality that could send a prebuilt email to each developer.                  The Code">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="A Mind of No Nation">
+<meta property="og:title" content="gplayscrape.py">
+<meta property="og:url" content="http://localhost:4000/projects/gplayscrape/2021/12/28/gplayscrape.html">
+
+
+  <meta property="og:description" content="Video Demonstration                              Description          I was tasked with finding a way to scrape information on app developers published on Google Play based on specific keywords.              Fortunately I found a pip package that established a foundation that I could build upon.             Using Selenium I continuously parse through the page until it reaches the last app available.              The program concurrently opens each app and scrapes the name of the app, the email of the developer, and the company or organization the developer belongs to and outputs it as a dataframe that is then converted to an Excel sheet that can be used for marketing purposes.              I am planning on adding an automatic emailing functionality that could send a prebuilt email to each developer.                  The Code">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-12-28T00:00:00-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/projects/gplayscrape/2021/12/28/gplayscrape.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Mind of No Nation Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--home">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Home      
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/writeups/">Write-Ups</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/">Contact</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div id="particles-js"></div>
+    <div class="initial-content">
+      <style>
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: repeat;
+  }
+</style>
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">gplayscrape.py</h1>
+    
+    <style>
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: repeat;
+  }
+</style>
+<div class="projectpage">
+    <section class="video">
+        <h2> Video Demonstration </h2> <hr>
+        <video controls="controls" width="1500" height="auto" src="/assets/images/gplayscrape.mov"></video>
+    </section>
+    <section class="description">
+        <h2>Description</h2> <hr>
+        <p>I was tasked with finding a way to scrape information on app developers published on Google Play based on specific keywords. 
+            Fortunately I found a pip package that established a foundation that I could build upon.
+            Using Selenium I continuously parse through the page until it reaches the last app available. 
+            The program concurrently opens each app and scrapes the name of the app, the email of the developer, and the company or organization the developer belongs to and outputs it as a dataframe that is then converted to an Excel sheet that can be used for marketing purposes.
+            <br> <br>I am planning on adding an automatic emailing functionality that could send a prebuilt email to each developer.
+        </p>
+        <a href="https://github.com/GabrielSestieri/GabrielSestieri/blob/main/Python/gplayscrape.py">The Code</a>
+    </section>
+</div>
+
+<h3 class="archive__subtitle">Recent Posts</h3>
+
+
+
+
+<div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/linkedinbot/2021/12/28/linkedinbot.html" rel="permalink">linkedinbot.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        After the GooglePlay Scraper I was tasked with a LinkedIn bot that could...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/gplayscrape/2021/12/28/gplayscrape.html" rel="permalink">gplayscrape.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        I was tasked with finding a way to scrape information on app developers ...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/robot/2021/12/27/robot.html" rel="permalink">robot.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        A class project that introduced me to OOP in Python. Simulates a very si...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/keylogger/2021/12/27/keylogger.html" rel="permalink">keylogger.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        A simple Python based keylogger that uses pynput to record keystrokes an...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/enron/2021/12/27/enron.html" rel="permalink">enron.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        Runs by using the command line; a user can input any keyword they'd like...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/druginter/2021/12/27/druginter.html" rel="permalink">drug_interactions.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        drug_interactions.py is a Python program that makes a series of calls to...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/connect4/2021/12/27/connect4.html" rel="permalink">connect4.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        Runs by using the command line; A terminal based connect 4 game. Can run...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/blackjack/2021/12/24/blackjack.html" rel="permalink">basketball_predictor.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        Runs by using the command line; a user can choose the amount they want t...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/basketball/2021/12/24/basketball.html" rel="permalink">basketball_predictor.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        Runs by using the command line; a user can input two NBA teams after cal...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/writeups/solr/2021/12/22/solr.html" rel="permalink">Basic CTF
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Enumeration
+
+Nmap
+We use nmap -A -vv -Pn IP
+
+GoBuster
+gobuster dir … … IP … …
+
+Brute Forcing / Cracking
+
+Hydra
+
+John the Ripper
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/hangman/2021/12/22/hangman.html" rel="permalink">hangman.py
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+    
+         Video Demonstration  
+        
+    
+    
+        Description 
+        A simple hangman game that is played through the terminal.
+        The C...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/writeups/basicctf/2021/12/22/basicctf.html" rel="permalink">Basic CTF
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Enumeration
+
+Nmap
+We use nmap -A -vv -Pn IP
+
+GoBuster
+gobuster dir … … IP … …
+
+Brute Forcing / Cracking
+
+Hydra
+
+John the Ripper
+</p>
+  </article>
+</div>
+
+  
+</div>
+
+
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+    <script src="/particles.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
