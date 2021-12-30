@@ -76,4 +76,10 @@ var store = [{
         "tags": [],
         "url": "/projects/linkedinbot/2021/12/28/linkedinbot.html",
         "teaser": null
+      },{
+        "title": "server.py/client.py",
+        "excerpt":"               Video Demonstration                               Description           Using sockets and threading I built a simple client/server program where all a user would need is the client script on their             local machine and the server script to be running remotely. I will be adding file transfer functionality soon.                   The Code      ","categories": ["projects","simpleserver"],
+        "tags": [],
+        "url": "/projects/simpleserver/2021/12/29/simpleserver.html",
+        "teaser": null
       }]
